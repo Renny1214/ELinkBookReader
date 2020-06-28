@@ -1,0 +1,25 @@
+<div class="container-fluid background">
+    <div class="d-flex justify-content-around font-weight-bold pt-5 pb-5 library text-light">
+        <div>Welcome to Library!</div>
+    </div>
+    <div class=" row d-flex justify-content-center">
+      <div *ngFor="let book of books; let i = index">
+        <div class="col-sm-3">
+          <div class="card cards mb-4">
+            <img class="card-img-top" src="{{ book.BookImage }}" />
+            <div class="card-body">
+              <h4 class="card-title text-center font-weight-bold">
+                {{ book.BookTitle }}
+              </h4>
+              <p class="card-text font-weight-bold text-center">
+                {{ book.BookAuthor }}
+              </p>
+              <a href="{{ book.BookPDF }}" class="text-dark read"
+                >Read the book!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

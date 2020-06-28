@@ -1,0 +1,108 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8 cont">
+      <img src="../../assets/images/Book2.jpg" class="first-image" />
+      <div class="top-left">
+        <nav class="navbar navbar-expand-sm justify-content-center">
+          <a class="navbar-brand text-light heading" href="#"
+            >Signzy Book Store</a
+          >
+
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link text-light" href="addBook">ADD+</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="library">LIBRARY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="setting">SETTING</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="text-mid">
+        A reader lives a thousand lives before he dies!
+      </div>
+      <div class="text-mid1">
+        Keep Reading
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <img src="../../assets/images/Book3.jpg" class="second-image" />
+    </div>
+  </div>
+</div>
+
+<div class="second-container pb-5">
+  <div class="text-center font-weight-bold pt-5 pb-5 popular-books">
+    Popular Books
+  </div>
+  <div class=" row d-flex justify-content-center">
+    <div *ngFor="let book of books; let i = index">
+      <div *ngIf="3 > i" class="col-sm-3">
+        <div class="card cards">
+          <img class="card-img-top" src="{{ book.BookImage }}" />
+          <div class="card-body">
+            <h4 class="card-title text-center font-weight-bold">
+              {{ book.BookTitle }}
+            </h4>
+            <p class="card-text font-weight-bold text-center">
+              {{ book.BookAuthor }}
+            </p>
+            <a href="{{ book.BookPDF }}" class="text-dark read"
+              >Read the book!</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col-sm-6 text-center">
+    <div class="container">
+      <ul>
+        <li>
+          <a class="animated-arrow" href="https://google.com">
+            <span class="the-arrow -left">
+              <span class="shaft"></span>
+            </span>
+            <span class="main">
+              <span class="text">
+                Check out more books
+              </span>
+              <span class="the-arrow -right">
+                <span class="shaft"></span>
+              </span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-sm-6 text-center">
+    <div class="container">
+      <ul>
+        <li>
+          <a class="animated-arrow" href="https://google.com">
+            <span class="the-arrow -left">
+              <span class="shaft"></span>
+            </span>
+            <span class="main">
+              <span class="text">
+                Add a book
+              </span>
+              <span class="the-arrow -right">
+                <span class="shaft"></span>
+              </span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="bg-dark">
+<div class="text-light text-center pt-3 pb-3 footer"> Made by Rishabh!</div>
+</div>

@@ -1,0 +1,19 @@
+.background {
+  background-image: linear-gradient(to top, #336d88, #1d1b38);
+}
+.cards {
+  width: 25rem;
+}
+.card-img-top {
+  height: 25rem;
+  width: 25rem;
+  padding: 1rem;
+}
+.library {
+  font-size: 2rem;
+}
+.read {
+  font-family: "Dancing Script", cursive;
+  display: flex;
+  justify-content: end;
+}
